@@ -127,4 +127,3 @@ case class JsonStringConstant(string: String) extends JsonInstruction {
 case class JsonBytesConstant(bytes: String) extends JsonInstruction {
   override def toMichelsonInstruction: Instruction = BytesConstant(bytes)
 }
-
