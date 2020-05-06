@@ -1,12 +1,12 @@
 package tech.cryptonomic.tezos.translator
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import io.scalac.common.PlatformSpecificFiles
 import tech.cryptonomic.tezos.translator.michelson.MichelineToMichelson
 import tech.cryptonomic.tezos.translator.michelson.ast.Schema
 
-class MichelineToMichelsonConseilJSSamplesSpec extends FlatSpec with Matchers with PlatformSpecificFiles {
+class MichelineToMichelsonConseilJSSamplesSpec extends AnyFlatSpec with Matchers with PlatformSpecificFiles {
 
   "JsonToMichelson" should "translate all samples from Micheline to Michelson" in {
 

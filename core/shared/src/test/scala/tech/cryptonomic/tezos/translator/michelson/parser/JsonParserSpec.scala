@@ -1,11 +1,11 @@
 package tech.cryptonomic.tezos.translator.michelson.parser
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import tech.cryptonomic.tezos.translator.michelson.ast._
 import Parser._
 
-class JsonParserSpec extends FlatSpec with Matchers {
+class JsonParserSpec extends AnyFlatSpec with Matchers {
 
   it should "parse one-argument MichelsonType" in {
     val json = """{"prim": "contract"}"""

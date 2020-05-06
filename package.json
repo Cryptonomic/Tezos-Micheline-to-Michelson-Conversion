@@ -1,8 +1,0 @@
-{
-  "name": "tezos-fullstack-console-translation-module",
-  "version": "0.1.0",
-  "dependencies": {
-    "nearley": "2.19.2",
-    "scalac-tezos-contract-translator": "file:./core/js/target/build"
-  }
-}

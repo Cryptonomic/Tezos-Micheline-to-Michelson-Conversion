@@ -1,11 +1,11 @@
 package tech.cryptonomic.tezos.translator.michelson.emitter
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import tech.cryptonomic.tezos.translator.michelson.ast._
 import tech.cryptonomic.tezos.translator.michelson.emitter.MichelsonEmitter._
 
-class MichelsonEmitterSpec extends FlatSpec with Matchers {
+class MichelsonEmitterSpec extends AnyFlatSpec with Matchers {
 
   it should "render single MichelsonType" in {
     Type("contract").emit shouldBe "contract"

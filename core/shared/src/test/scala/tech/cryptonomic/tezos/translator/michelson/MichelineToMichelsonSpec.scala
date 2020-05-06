@@ -1,10 +1,10 @@
 package tech.cryptonomic.tezos.translator.michelson
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import tech.cryptonomic.tezos.translator.michelson.ast.Schema
 
-class MichelineToMichelsonSpec extends FlatSpec with Matchers {
+class MichelineToMichelsonSpec extends AnyFlatSpec with Matchers {
 
   "MichelineToMichelson" should "convert json to michelson format" in {
       val json =

@@ -3,12 +3,12 @@ package tech.cryptonomic.tezos.translator
 import Helpers._
 import tech.cryptonomic.tezos.translator.michelson.MichelineToMichelson
 import org.scalatest.prop.TableDrivenPropertyChecks
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import tech.cryptonomic.tezos.translator.michelson.ast.Schema
 
 class MichelineToMichelsonTranslatorSpec
-    extends FlatSpec
+    extends AnyFlatSpec
     with TableDrivenPropertyChecks
     with Matchers {
 
