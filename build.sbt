@@ -123,15 +123,15 @@ lazy val publishSettings = Seq(
   releaseCommitMessage := s"Set version to ${version.value}",
   releaseIgnoreUntrackedFiles := true,
   releaseCrossBuild := true,
-  homepage := Some(url("https://github.com/Cryptonomic/tezos-micheline-to-michelson")),
-  licenses := Seq("Apache 2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
+  homepage := Some(url("https://github.com/Cryptonomic/Tezos-Micheline-to-Michelson-Conversion")),
+  licenses := Seq("GPL 3.0" -> url("https://www.gnu.org/licenses/gpl-3.0.en.html")),
   publishTo := sonatypePublishToBundle.value,
   publishMavenStyle := true,
   publishArtifact in Test := false,
   scmInfo := Some(
     ScmInfo(
-      url("https://github.com/Cryptonomic/tezos-micheline-to-michelson"),
-      "scm:git:git@github.com:Cryptonomic/tezos-micheline-to-michelson.git"
+      url("https://github.com/Cryptonomic/Tezos-Micheline-to-Michelson-Conversion"),
+      "scm:git:git@github.com:Cryptonomic/Tezos-Micheline-to-Michelson-Conversion.git"
     )
   ),
   developers := List(
@@ -155,7 +155,7 @@ lazy val publishSettings = Seq(
     releaseStepCommandAndRemaining("+publishSigned"),
     releaseStepCommand("sonatypeBundleRelease"),
     setNextVersion,
-    commitNextVersion
-//    pushChanges
+    commitNextVersion,
+    pushChanges
   )
 )
