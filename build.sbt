@@ -29,8 +29,8 @@ def priorTo2_13(scalaVersion: String): Boolean =
 
 lazy val commonSettings = Seq(
   organization := "ru.pavkin",
-  scalaVersion := "2.13.1",
-  crossScalaVersions := Seq("2.12.11", "2.13.1"),
+  scalaVersion := "2.13.3",
+  crossScalaVersions := Seq("2.12.12", "2.13.3"),
   scalacOptions ++= {
     if (priorTo2_13(scalaVersion.value)) compilerOptions
     else
@@ -42,9 +42,9 @@ lazy val commonSettings = Seq(
   }
 )
 
-lazy val circeVersion = "0.13.0"
+lazy val circeVersion = "0.14.0-M1"
 
-lazy val catsVersion = "2.2.0-M1"
+lazy val catsVersion = "2.2.0-RC3"
 
 lazy val scalaTestVersion = "3.1.1"
 
@@ -79,7 +79,7 @@ lazy val core = crossProject(JSPlatform, JVMPlatform)
       )
     },
     libraryDependencies ++= Seq(
-      "io.github.cquiroz" %%% "scala-java-time" % "2.0.0-RC5" % Test
+      "io.github.cquiroz" %%% "scala-java-time" % "2.0.0" % Test
     ),
     buildJS.in(Compile) := {
       (webpack in (Compile, fullOptJS)).value
