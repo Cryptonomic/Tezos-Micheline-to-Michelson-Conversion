@@ -53,7 +53,7 @@ lazy val core = crossProject(JSPlatform, JVMPlatform)
   .settings(commonSettings: _*)
   .settings(
     name := "core",
-    moduleName := "tezos-micheline-to-michelson",
+    moduleName := "tezos-micheline-to-michelson-conversion",
     libraryDependencies ++= Seq(
       "io.circe"      %%% "circe-core"    % circeVersion,
       "io.circe"      %%% "circe-parser"  % circeVersion,
