@@ -28,7 +28,7 @@ def priorTo2_13(scalaVersion: String): Boolean =
   }
 
 lazy val commonSettings = Seq(
-  organization := "ru.pavkin",
+  organization := "tech.cryptonomic",
   scalaVersion := "2.13.3",
   crossScalaVersions := Seq("2.12.12", "2.13.3"),
   scalacOptions ++= {
